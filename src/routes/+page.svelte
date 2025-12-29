@@ -77,7 +77,7 @@
 
         <div class="inline-block mb-8" in:fade={{ duration: 600 }}>
             <img
-                    src="/photo.webp"
+                    src="/portfolio/photo.webp"
                     alt="Rully Admiral"
                     class="w-40 h-40 object-cover
                        border-4 border-neutral-800 dark:border-neutral-200"
@@ -107,7 +107,7 @@
         <div class="flex gap-4 justify-center flex-wrap mb-12"
              in:fly={{ y: 20, delay: 600 }}>
             <a
-                    href="/CV_RullyAdmiral.pdf"
+                    href="/portfolio/CV_RullyAdmiral.pdf"
                     target="_blank"
                     class="px-10 py-3 text-sm uppercase tracking-wider font-semibold
                     border border-neutral-300 hover:border-neutral-800 dark:border-neutral-700 dark:hover:bg-neutral-300"
