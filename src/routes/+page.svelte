@@ -2,7 +2,6 @@
     import { theme } from '$lib/stores/theme';
     import { fade, fly } from 'svelte/transition';
     import { onMount } from 'svelte';
-    import { base } from '$app/paths';
 
     const texts = [
         'Building with purpose',
@@ -76,12 +75,12 @@
 
     <section class="text-center px-6 max-w-3xl">
 
-        <div class="inline-block mb-8" in:fade={{ duration: 600 }}>
+        <div class="inline-block mb-8">
             <img
                     src="/photo.webp"
                     alt="Rully Admiral"
                     class="w-40 h-40 object-cover
-                       border-4 border-neutral-800 dark:border-neutral-200"
+                       border-4 border-neutral-900 dark:border-neutral-50 transition-colors duration-500"
             />
         </div>
 
