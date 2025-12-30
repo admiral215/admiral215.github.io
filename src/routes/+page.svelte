@@ -2,6 +2,7 @@
     import { theme } from '$lib/stores/theme';
     import { fade, fly } from 'svelte/transition';
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     const texts = [
         'Building with purpose',
@@ -77,7 +78,7 @@
 
         <div class="inline-block mb-8" in:fade={{ duration: 600 }}>
             <img
-                    src="/portfolio/photo.webp"
+                    src="/photo.webp"
                     alt="Rully Admiral"
                     class="w-40 h-40 object-cover
                        border-4 border-neutral-800 dark:border-neutral-200"
@@ -104,15 +105,20 @@
             </p>
         </div>
 
-        <div class="flex gap-4 justify-center flex-wrap mb-12"
-             in:fly={{ y: 20, delay: 600 }}>
+        <div class="flex gap-4 justify-center group flex-wrap mb-12">
             <a
-                    href="/portfolio/CV_RullyAdmiral.pdf"
-                    target="_blank"
-                    class="px-10 py-3 text-sm uppercase tracking-wider font-semibold
-                    border border-neutral-300 hover:border-neutral-800 dark:border-neutral-700 dark:hover:bg-neutral-300"
+            href="/CV_RullyAdmiral.pdf"
+            target="_blank"
+            class="px-8 py-3 text-sm uppercase tracking-wider font-semibold
+            border border-neutral-300 hover:border-neutral-800 dark:hover:border-neutral-200 dark:border-neutral-700"
             >
-                Resume
+            <div class="flex justify-center items-center">
+                <svg class="w-0 group-hover:w-5 group-hover:mr-1 h-5 transition-all duration-200 overflow-visible" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <span>Resume</span>
+            </div>
             </a>
         </div>
 
